@@ -1,0 +1,71 @@
+@import 'dataSyst/variables.scss';
+*{
+    font-family: Arial;
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+        .modal{
+            width: 620px;
+            height: 230px;
+            overflow: hidden;
+            background: $colorFondo;
+            position: fixed;
+            bottom: -300px;
+            right: 20px;
+            border-radius: 5px;
+            transition: 1s;
+                img{
+                    width: 320px;
+                    height: 230px;
+                    float: left;
+                }
+                .content{
+                    width: 300px;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    float: left;
+                    color: $colorParrafoyTitulo;
+                        h1{
+                            font-size: 20px;
+                            color: $colorTitulo;
+                        }
+                        p{
+                            font-size: 15px;
+                        }
+                        a{
+                            display: inline-block;
+                            background: $colorBoton;
+                            padding: 10px 30px;
+                            border-radius: 8px;
+                            color: $colorTextoBoton;
+                        }
+                }
+                .hide{
+                    position: absolute;
+                    z-index: 5;
+                    top: 14px;
+                    right:14px;
+                    font-size: 20px;
+                    color: $colorCerrar;
+                    opacity: 0.7;
+                    transition: 0.3s;
+                    cursor: pointer;
+                        &:hover{
+                            // transform: rotate(90deg);
+                            opacity: 1;
+                        }
+                }
+        }
+        .btn{
+            color: $colorBotonVentana;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 8px;
+            border:2px solid;
+            padding: 10px 20px;
+        }
+}

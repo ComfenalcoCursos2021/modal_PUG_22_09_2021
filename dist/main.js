@@ -1,0 +1,1 @@
+addEventListener("DOMContentLoaded",(e=>{let t=document.querySelector(".modal");document.querySelector(".btn").addEventListener("click",(e=>{Object.assign(t.style,{bottom:"20px"})})),document.querySelector(".hide").addEventListener("click",(e=>{Object.assign(t.style,{bottom:"-300px"})}))}));

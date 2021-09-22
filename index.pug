@@ -1,0 +1,22 @@
+include dataSyst/variables.pug
+doctype html
+html(lang="sp")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Ventana Emergente
+        link(rel="stylesheet", href="style.css")
+        script(src="main.js")
+        script(type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js")
+        script(nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js")
+    body 
+        .modal
+            img(src=""+Imagen)
+            .content
+                h1=Titulo
+                p=Parrafo
+                a(href=""+Ruta target="_blanck")=Boton
+            .hide
+                ion-icon(name=""+Icono)
+        a.btn(href="#")=Ventana
